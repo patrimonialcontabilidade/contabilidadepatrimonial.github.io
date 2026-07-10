@@ -11,7 +11,7 @@
   <header class="topo">
     <div class="container nav">
       <div class="marca">
-        <img class="logo-img" src="assets/logo-patrimonial-icon.png" alt="Logo Patrimonial Contabilidade" />
+        <img class="logo-img" src="assets/logo-patrimonial-completo.png" alt="Logo Patrimonial Contabilidade" />
         <div>
           <h1>Patrimonial Contabilidade</h1>
           <p>Contabilidade online com organização e confiança</p>
@@ -37,13 +37,14 @@
           <h2>Contabilidade simples, organizada e próxima do cliente.</h2>
           <p class="subtexto">A Patrimonial Contabilidade auxilia MEIs, empresas, igrejas, associações e pessoas físicas em rotinas fiscais, legalização, regularização e organização documental.</p>
           <div class="botoes">
-            <a class="btn principal" href="https://wa.me/5524999548558" target="_blank">Falar no WhatsApp</a>
+            <a class="btn principal" href="https://wa.me/5524999548558" target="_blank" rel="noopener">WhatsApp: (24) 99954-8558</a>
+            <a class="btn principal alternativo" href="https://wa.me/5524998151811" target="_blank" rel="noopener">WhatsApp: (24) 99815-1811</a>
             <a class="btn secundario" href="#servicos">Ver serviços</a>
           </div>
         </div>
         <aside class="card destaque">
           <h3>Comunicado importante</h3>
-          <p>Atualize este espaço com avisos para clientes, vencimentos, documentos pendentes ou novidades do escritório.</p>
+          <p>Mantenha suas obrigações e documentos em dia com acompanhamento contábil organizado e atendimento próximo.</p>
           <ul>
             <li>Envio de documentos mensal</li>
             <li>Regularização de MEI e empresas</li>
@@ -152,10 +153,11 @@
           <span>Contato</span>
           <h2>Fale com a Patrimonial Contabilidade</h2>
         </div>
-        <p><strong>WhatsApp:</strong> (24) 99954-8558</p>
+        <p><strong>WhatsApp:</strong> <a class="link-contato" href="https://wa.me/5524999548558" target="_blank" rel="noopener">(24) 99954-8558</a></p>
+        <p><strong>WhatsApp alternativo:</strong> <a class="link-contato" href="https://wa.me/5524998151811" target="_blank" rel="noopener">(24) 99815-1811</a></p>
         <p><strong>E-mail:</strong> patrimonialcontabilidadevr@hotmail.com</p>
-        <p><strong>Atendimento:</strong> online, de segunda a sexta</p>
-        <p><strong>Responsável:</strong> Rogerio de Oliveira Silva</p>
+        <p><strong>Atendimento:</strong> online, de segunda a sexta, das 8h30 às 12h e das 14h às 17h30</p>
+        <p><strong>Responsável:</strong> Rogério de Oliveira Silva</p>
       </div>
       <form class="formulario" onsubmit="enviarWhatsApp(event)">
         <h3>Solicitar atendimento</h3>
@@ -171,17 +173,23 @@
           <option>Outro serviço</option>
         </select>
         <textarea id="mensagem" placeholder="Descreva rapidamente o que precisa"></textarea>
+        <label class="rotulo-numero" for="numeroAtendimento">Enviar para:</label>
+        <select id="numeroAtendimento" required>
+          <option value="5524999548558">(24) 99954-8558</option>
+          <option value="5524998151811">(24) 99815-1811</option>
+        </select>
         <button class="btn principal" type="submit">Enviar pelo WhatsApp</button>
       </form>
     </section>
   </main>
 
-  <a class="whatsapp" href="https://wa.me/5524999548558" target="_blank">WhatsApp</a>
+  <a class="whatsapp" href="https://wa.me/5524999548558" target="_blank" rel="noopener" aria-label="Falar com a Patrimonial pelo WhatsApp">WhatsApp</a>
 
   <footer>
     <div class="container rodape">
       <p>© <span id="ano"></span> Patrimonial Contabilidade. Todos os direitos reservados.</p>
-      <p>Site institucional simples.</p>
+      <p>R O Silva Assessoria Contábil ME • CNPJ 11.117.268/0001-24</p>
+      <p>Atendimento online: segunda a sexta, das 8h30 às 12h e das 14h às 17h30</p>
     </div>
   </footer>
 
