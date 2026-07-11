@@ -30,3 +30,105 @@ a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:aut
 
 .captacao-card{grid-column:2}
 @media(max-width:850px){.captacao-card{grid-column:auto}}
+
+
+/* Formulários de atendimento */
+.formularios{background:#f4f9f6}
+.introducao-formularios{
+  max-width:920px;
+  font-size:18px;
+  color:#40514b;
+  margin:-8px 0 30px;
+}
+.grid-formularios{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.card-formulario{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-height:300px;
+  background:#fff;
+  border:1px solid #dce9e2;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 28px rgba(0,0,0,.07);
+}
+.card-formulario h3{
+  color:var(--verde-escuro);
+  font-size:24px;
+  line-height:1.25;
+  margin:14px 0 10px;
+}
+.card-formulario p{margin-bottom:22px;color:#34443e}
+.icone-formulario{
+  display:grid;
+  place-items:center;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:var(--verde);
+  color:#fff;
+  font-size:20px;
+  font-weight:900;
+}
+.acoes-formulario{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:auto;
+}
+.btn-formulario{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:48px;
+  padding:12px 18px;
+  border-radius:12px;
+  background:var(--dourado);
+  color:#17261f;
+  font-weight:900;
+  text-align:center;
+  margin-top:auto;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn-formulario:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+.acoes-formulario .btn-formulario{margin-top:0;flex:1 1 220px}
+.secundario-formulario{
+  background:var(--verde-escuro);
+  color:#fff;
+}
+.aviso-formularios{
+  margin-top:24px;
+  padding:18px 20px;
+  border-left:5px solid var(--dourado);
+  border-radius:12px;
+  background:#fff;
+  color:#34443e;
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+@media(max-width:850px){
+  .grid-formularios{grid-template-columns:1fr}
+  .card-formulario{min-height:auto;padding:24px}
+  .acoes-formulario{flex-direction:column}
+  .acoes-formulario .btn-formulario{flex-basis:auto;width:100%}
+}
+
+
+/* Opções do Movimento de Caixa */
+.acoes-caixa{
+  display:grid;
+  grid-template-columns:1fr;
+  width:100%;
+}
+.acoes-caixa .btn-formulario{
+  width:100%;
+  flex:none;
+}
