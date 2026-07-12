@@ -1,0 +1,254 @@
+:root{
+  --verde-escuro:#064f35;
+  --verde:#0b6b47;
+  --verde-claro:#e8f4ee;
+  --dourado:#d8b24d;
+  --texto:#1f2d28;
+  --cinza:#f6f8f7;
+  --branco:#ffffff;
+  --sombra:0 12px 35px rgba(0,0,0,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial, Helvetica, sans-serif;color:var(--texto);line-height:1.6;background:var(--branco)}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+.topo{background:var(--branco);position:sticky;top:0;z-index:20;box-shadow:0 2px 15px rgba(0,0,0,.07)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}.marca{display:flex;align-items:center;gap:14px}.logo-img{width:210px;height:72px;object-fit:contain;object-position:left center;border-radius:14px;background:#fff;padding:2px}.marca h1{font-size:24px;color:var(--verde-escuro);line-height:1.1}.marca p{font-size:14px;color:#4a5a55}nav{display:flex;gap:24px;font-weight:700;color:#063e2d}nav a:hover{color:var(--dourado)}.menu-btn{display:none;background:var(--verde);color:#fff;border:0;border-radius:10px;font-size:24px;padding:6px 12px}
+.hero{background:linear-gradient(135deg,var(--verde-escuro),var(--verde));color:#fff;padding:90px 0}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}.etiqueta{display:inline-block;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);padding:7px 14px;border-radius:999px;margin-bottom:22px}.hero h2{font-size:54px;line-height:1.05;margin-bottom:24px;max-width:760px}.subtexto{font-size:20px;max-width:760px}.botoes{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-block;border-radius:12px;padding:13px 22px;font-weight:800;border:1px solid transparent;cursor:pointer}.principal{background:var(--dourado);color:#17261f}.principal.alternativo{background:#fff;color:var(--verde-escuro);border-color:rgba(255,255,255,.7)}.secundario{border-color:rgba(255,255,255,.55);color:#fff}.card{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--sombra);border:1px solid #e8efeb}.destaque{color:var(--texto)}.destaque h3{color:var(--verde-escuro);margin-bottom:16px}.destaque ul{margin-left:18px;margin-top:12px}.faixa{background:#fff;margin-top:-1px}.numeros{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:26px 0}.numeros div{background:var(--verde-claro);padding:20px;border-radius:16px}.numeros strong{display:block;color:var(--verde-escuro);font-size:23px}.numeros span{font-size:14px}.secao{padding:72px 0}.titulo{margin-bottom:30px}.titulo span{color:var(--dourado);font-weight:900;text-transform:uppercase;letter-spacing:.06em}.titulo h2{font-size:36px;color:var(--verde-escuro);line-height:1.15;margin-top:8px}.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card h3{color:var(--verde-escuro);font-size:22px;margin-bottom:10px}.claro{background:var(--cinza)}.lista-dupla{display:grid;grid-template-columns:1fr 1fr;gap:22px}.lista-perfis{grid-template-columns:repeat(3,1fr)}.painel{background:#fff;border-left:6px solid var(--verde);border-radius:16px;padding:26px;box-shadow:0 8px 20px rgba(0,0,0,.06)}.painel h3{color:var(--verde-escuro);font-size:22px;margin-bottom:8px}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.checklist label{background:var(--verde-claro);padding:15px;border-radius:12px;font-weight:700}.checklist input{margin-right:10px}.observacao{margin-top:18px;color:#4e5b57}.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.passos div{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.06)}.passos strong{display:grid;place-items:center;background:var(--verde);color:#fff;width:42px;height:42px;border-radius:50%;margin-bottom:14px}.passos h3{color:var(--verde-escuro)}.contato{display:grid;grid-template-columns:1fr .9fr;gap:40px}.formulario{background:var(--verde-claro);border-radius:18px;padding:26px}.formulario h3{color:var(--verde-escuro);margin-bottom:16px}.formulario input,.formulario select,.formulario textarea{width:100%;padding:13px;margin-bottom:12px;border-radius:10px;border:1px solid #cbd8d1;font:inherit}.formulario textarea{min-height:110px;resize:vertical}.rotulo-numero{display:block;font-weight:700;color:var(--verde-escuro);margin:2px 0 6px}.link-contato{color:var(--verde);font-weight:800}.link-contato:hover{text-decoration:underline}.whatsapp{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;font-weight:900;padding:13px 18px;border-radius:999px;box-shadow:var(--sombra);z-index:30}footer{background:#052d20;color:#fff;padding:24px 0}.rodape{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px}
+@media(max-width:850px){.menu-btn{display:block}nav{display:none;position:absolute;right:4%;top:84px;background:#fff;box-shadow:var(--sombra);border-radius:16px;padding:18px;flex-direction:column;gap:12px}nav.ativo{display:flex}.hero-grid,.contato,.lista-dupla{grid-template-columns:1fr}.hero h2{font-size:38px}.grid-cards,.numeros,.passos,.checklist{grid-template-columns:1fr}.marca h1{font-size:19px}.marca p{font-size:12px}.logo-img{width:170px;height:58px}}
+.marca h1 span{font-size:.72em;color:var(--verde)}
+.captacao{background:linear-gradient(180deg,#f7fbf9,#e8f4ee)}
+.introducao-captacao{max-width:980px;font-size:18px;margin-bottom:30px;color:#34443e}
+.etapas-captacao{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.etapa-captacao{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 22px rgba(0,0,0,.06);border:1px solid #deebe4}
+.etapa-captacao strong{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:50%;background:var(--verde);color:#fff;font-size:19px}
+.etapa-captacao h3{color:var(--verde-escuro);margin-bottom:5px}
+.aviso-captacao{margin-top:26px;background:var(--verde-escuro);color:#fff;border-radius:18px;padding:28px}
+.aviso-captacao h3{font-size:24px;margin-bottom:8px}
+.aviso-captacao p{margin-bottom:18px;max-width:1000px}
+@media(max-width:850px){.etapas-captacao{grid-template-columns:1fr}.marca h1 span{font-size:.78em}}
+
+.captacao-card{grid-column:2}
+@media(max-width:850px){.captacao-card{grid-column:auto}}
+
+
+/* Formulários de atendimento */
+.formularios{background:#f4f9f6}
+.introducao-formularios{
+  max-width:920px;
+  font-size:18px;
+  color:#40514b;
+  margin:-8px 0 30px;
+}
+.grid-formularios{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.card-formulario{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-height:300px;
+  background:#fff;
+  border:1px solid #dce9e2;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 28px rgba(0,0,0,.07);
+}
+.card-formulario h3{
+  color:var(--verde-escuro);
+  font-size:24px;
+  line-height:1.25;
+  margin:14px 0 10px;
+}
+.card-formulario p{margin-bottom:22px;color:#34443e}
+.icone-formulario{
+  display:grid;
+  place-items:center;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:var(--verde);
+  color:#fff;
+  font-size:20px;
+  font-weight:900;
+}
+.acoes-formulario{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:auto;
+}
+.btn-formulario{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:48px;
+  padding:12px 18px;
+  border-radius:12px;
+  background:var(--dourado);
+  color:#17261f;
+  font-weight:900;
+  text-align:center;
+  margin-top:auto;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn-formulario:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+.acoes-formulario .btn-formulario{margin-top:0;flex:1 1 220px}
+.secundario-formulario{
+  background:var(--verde-escuro);
+  color:#fff;
+}
+.aviso-formularios{
+  margin-top:24px;
+  padding:18px 20px;
+  border-left:5px solid var(--dourado);
+  border-radius:12px;
+  background:#fff;
+  color:#34443e;
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+@media(max-width:850px){
+  .grid-formularios{grid-template-columns:1fr}
+  .card-formulario{min-height:auto;padding:24px}
+  .acoes-formulario{flex-direction:column}
+  .acoes-formulario .btn-formulario{flex-basis:auto;width:100%}
+}
+
+
+/* Opções do Movimento de Caixa */
+.acoes-caixa{
+  display:grid;
+  grid-template-columns:1fr;
+  width:100%;
+}
+.acoes-caixa .btn-formulario{
+  width:100%;
+  flex:none;
+}
+
+
+/* Prévia — Cliente Avulso e Área do Cliente */
+.card-area-cliente{
+  border:2px solid rgba(8,92,65,.18);
+  background:linear-gradient(180deg,#ffffff 0%,#f3faf6 100%);
+}
+.selo-area{
+  position:absolute;
+  top:24px;
+  right:24px;
+  background:#e5f2ec;
+  color:var(--verde-escuro);
+  border:1px solid #c9e2d5;
+  border-radius:999px;
+  padding:7px 11px;
+  font-size:12px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.form-area-cliente{
+  width:100%;
+  display:grid;
+  gap:8px;
+  margin-top:2px;
+}
+.form-area-cliente label{
+  color:var(--verde-escuro);
+  font-weight:800;
+  font-size:14px;
+  margin-top:5px;
+}
+.form-area-cliente input{
+  width:100%;
+  border:1px solid #bfcfc7;
+  border-radius:11px;
+  padding:13px 14px;
+  font:inherit;
+  text-transform:uppercase;
+  outline:none;
+  background:#fff;
+}
+.form-area-cliente input:focus{
+  border-color:var(--verde);
+  box-shadow:0 0 0 3px rgba(15,113,78,.12);
+}
+.campo-pin{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+}
+.campo-pin input{text-transform:none}
+.mostrar-pin{
+  border:1px solid #bfcfc7;
+  border-radius:11px;
+  background:#fff;
+  color:var(--verde-escuro);
+  padding:0 13px;
+  font-weight:800;
+  cursor:pointer;
+}
+.btn-acessar-area{
+  width:100%;
+  border:0;
+  cursor:pointer;
+  margin-top:8px;
+}
+.mensagem-portal{
+  min-height:22px;
+  font-size:14px;
+  font-weight:800;
+  color:var(--verde-escuro);
+}
+.botoes-portal-demo{
+  width:100%;
+  display:grid;
+  gap:10px;
+  margin-top:14px;
+  padding-top:16px;
+  border-top:1px dashed #b9cec3;
+}
+.botoes-portal-demo .btn-formulario{width:100%;margin:0}
+.ajuda-area-cliente{
+  margin:17px 0 0!important;
+  font-size:14px;
+  color:#4b5b55!important;
+}
+.nota-previa{
+  margin:9px 0 0!important;
+  font-size:12px;
+  color:#7a5b00!important;
+  background:#fff7d9;
+  border-radius:9px;
+  padding:9px 10px;
+}
+@media(max-width:850px){
+  .selo-area{position:static;display:inline-block;margin-bottom:4px}
+}
+
+
+/* Cartão Pessoa Física */
+.card-formulario h3 + p{
+  line-height:1.55;
+}
+
+
+/* Estados da consulta real da Área do Cliente */
+.mensagem-portal.erro{color:#a12626}
+.mensagem-portal.sucesso{color:var(--verde-escuro);background:#e7f5ed;border-radius:9px;padding:9px 10px}
+.mensagem-portal.carregando{color:#7a5b00}
+.btn-acessar-area:disabled{opacity:.7;cursor:wait}
+.nota-seguranca{color:#4b5b55!important;background:#edf6f1}
+
+
+/* Segurança visual: o atributo hidden sempre prevalece */
+.botoes-portal-demo[hidden],
+#botoesPortalCliente[hidden]{
+  display:none!important;
+}
