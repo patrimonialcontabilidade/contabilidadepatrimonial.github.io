@@ -83,8 +83,8 @@
           <p>Atas, estatutos, eleição e posse, registro em cartório, CNPJ, regularização documental e orientação administrativa.</p>
         </article>
         <article class="card">
-          <h3>Imposto de Renda</h3>
-          <p>Organização de documentos e elaboração de declaração de IRPF para pessoa física.</p>
+          <h3>Pessoa Física e Imposto de Renda</h3>
+          <p>Regularização de CPF, pendências fiscais, procurações, requerimentos, serviços avulsos e organização de documentos para declaração de IRPF.</p>
         </article>
         <article class="card">
           <h3>Certificado e Procuração</h3>
@@ -107,7 +107,7 @@
           <span>Quem atendemos</span>
           <h2>Atendimento para diferentes perfis de clientes</h2>
         </div>
-        <div class="lista-dupla">
+        <div class="lista-dupla lista-perfis">
           <div class="painel">
             <h3>Clientes empresariais</h3>
             <p>MEI, microempresas, prestadores de serviços, comércio, transporte, autônomos organizados como empresa e novos empreendedores.</p>
@@ -115,6 +115,10 @@
           <div class="painel">
             <h3>Entidades sem fins lucrativos</h3>
             <p>Igrejas, associações de moradores, institutos e entidades que precisam de estatuto, ata, diretoria, CNPJ e controle documental.</p>
+          </div>
+          <div class="painel">
+            <h3>Pessoa Física</h3>
+            <p>Regularização de CPF, pendências cadastrais e fiscais, procurações, requerimentos, serviços avulsos e declaração de Imposto de Renda Pessoa Física.</p>
           </div>
         </div>
       </div>
@@ -219,22 +223,89 @@
 
           <article class="card-formulario card-formulario-duplo">
             <div class="icone-formulario" aria-hidden="true">4</div>
-            <h3>Movimento de Caixa</h3>
+            <h3>Pessoa Física</h3>
             <p>
-              Escolha a forma mais prática de enviar suas movimentações financeiras.
-              Você pode digitar cada lançamento ou encaminhar fotos, planilha, PDF ou relatório já preenchido.
+              Atendimento para regularização de CPF, pendências fiscais, procurações,
+              requerimentos, declarações, serviços avulsos e Imposto de Renda Pessoa Física.
+            </p>
+            <div class="acoes-formulario">
+              <a class="btn-formulario" href="https://forms.gle/VuqNhYx3gx2KTvMZ8" target="_blank" rel="noopener">
+                Solicitar serviço para Pessoa Física
+              </a>
+              <a class="btn-formulario secundario-formulario" href="https://forms.gle/i8E9woCSNQyhT89d6" target="_blank" rel="noopener">
+                Enviar dados para o IRPF
+              </a>
+            </div>
+          </article>
+
+          <article class="card-formulario card-formulario-duplo">
+            <div class="icone-formulario" aria-hidden="true">5</div>
+            <h3>Cliente Avulso</h3>
+            <p>
+              Utilize esta área para um serviço pontual. Você pode digitar o Movimento de Caixa
+              ou enviar fotos do Livro Caixa, planilhas, relatórios, arquivos em PDF e extratos bancários.
             </p>
             <div class="acoes-formulario acoes-caixa">
               <a class="btn-formulario" href="https://forms.gle/HPVmjyB6Vn5iG1R58" target="_blank" rel="noopener">
-                Digitar movimentações
+                Digitar Movimento de Caixa
               </a>
               <a class="btn-formulario secundario-formulario" href="https://forms.gle/6nrNp5MrmN5SD26A8" target="_blank" rel="noopener">
                 Enviar fotos do Livro Caixa
               </a>
               <a class="btn-formulario secundario-formulario" href="https://forms.gle/6nrNp5MrmN5SD26A8" target="_blank" rel="noopener">
-                Enviar planilha ou PDF
+                Enviar planilha, PDF ou extrato bancário
               </a>
             </div>
+          </article>
+
+          <article class="card-formulario card-area-cliente">
+            <div class="icone-formulario" aria-hidden="true">6</div>
+            <div class="selo-area">Acesso exclusivo</div>
+            <h3>Área do Cliente</h3>
+            <p>
+              Clientes cadastrados na Patrimonial podem acessar seus formulários individuais
+              informando o código EMP e o PIN de quatro números.
+            </p>
+
+            <form class="form-area-cliente" onsubmit="acessarAreaCliente(event)">
+              <label for="codigoPortal">Código do cliente</label>
+              <input id="codigoPortal" name="codigoPortal" type="text" maxlength="6"
+                     placeholder="Exemplo: EMP023" autocomplete="off" required>
+
+              <label for="pinPortal">PIN de acesso</label>
+              <div class="campo-pin">
+                <input id="pinPortal" name="pinPortal" type="password" inputmode="numeric"
+                       maxlength="4" placeholder="4 números" autocomplete="off" required>
+                <button type="button" class="mostrar-pin" onclick="alternarPin()" aria-label="Mostrar ou ocultar PIN">
+                  Mostrar
+                </button>
+              </div>
+
+              <button class="btn-formulario btn-acessar-area" type="submit">
+                Acessar minha área
+              </button>
+
+              <p id="mensagemPortal" class="mensagem-portal" aria-live="polite"></p>
+            </form>
+
+            <div id="botoesPortalCliente" class="botoes-portal-demo" hidden>
+              <a id="linkPortalDigitar" class="btn-formulario" href="#" target="_blank" rel="noopener">
+                Digitar movimentações
+              </a>
+              <a id="linkPortalFotos" class="btn-formulario secundario-formulario" href="#" target="_blank" rel="noopener">
+                Enviar fotos do Livro Caixa
+              </a>
+              <a id="linkPortalPlanilha" class="btn-formulario secundario-formulario" href="#" target="_blank" rel="noopener">
+                Enviar planilha, PDF ou extrato
+              </a>
+            </div>
+
+            <p class="ajuda-area-cliente">
+              Ainda não possui código EMP e PIN? Solicite à Patrimonial Contabilidade após a contratação.
+            </p>
+            <p class="nota-previa nota-seguranca">
+              Seus formulários somente serão exibidos após a validação do código EMP e do PIN.
+            </p>
           </article>
         </div>
 
